@@ -1,0 +1,77 @@
+@use 'var' as *;
+
+// --- function ---
+// --- funkce na line height prepocet na em
+@function em($height, $size) {
+    @return ($height / $size) *1em
+}
+
+;
+
+// ---------------------
+// Mixins
+// ---------------------
+
+// vlastnost vyberu
+@mixin selection {
+    ::-moz-selection {
+        @content;
+    }
+
+    ::selection {
+        @content;
+    }
+}
+
+
+// $value= border-box, content-box, inherit
+@mixin box-sizing ($value) {
+    box-sizing: $value;
+    -webkit-box-sizing: $value;
+}
+
+
+
+@mixin flex($justify: space-between, $align: flex-start, $value: 1rem) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $value;
+}
+
+@mixin container($width) {
+    max-width: $width;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+
+// --- placeholders ---
+%weight-300 {
+    font-weight: 300;
+}
+
+%weight-400 {
+    font-weight: 400;
+}
+
+%weight-500 {
+    font-weight: 500;
+}
+
+
+%weight-700 {
+    font-weight: 700;
+}
+
+%weight-800 {
+    font-weight: 800;
+}
+
+%heebo {
+    font-family: 'Heebo', sans-serif;
+}
+
+%poppins {
+    font-family: 'Poppins', sans-serif;
+}

@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+main .flexWrap h6 {
+  font-weight: 300;
+}
+
+main .toMiddle p, main .middland .middland-flex p, main .lastFlex .content p {
+  font-weight: 400;
+}
+
+.mobile .mobile-list li a, header h1, header .navigace li a, main .toMiddle h3, main .toMiddle h2, main .toMiddle h4, main .toMiddle input, main .middland h2, main .middland .middland-flex a, main .flexWrap h3, main .align, main .lastFlex .content h3, main .lastFlex .content h2, main .lastSection h2, main .lastSection .gastby h5, main .lastSection .gastby h6, footer .footerFlex .footerForm h3, footer .footerFlex .footerForm .formFlex input, footer p {
+  font-weight: 500;
+}
+
+main .middland .middland-flex h2 {
+  font-weight: 700;
+}
+
+footer .footerFlex .footerEdie h2, footer p span {
+  font-weight: 800;
+}
+
+header h1, footer .footerFlex .footerEdie h2 {
+  font-family: "Heebo", sans-serif;
+}
+
+.mobile .mobile-list li a, header .navigace li a, main, footer .footerFlex .footerNav a, footer .footerFlex .footerForm h3, footer .footerFlex .footerForm .formFlex input, footer p {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --h1-fs: 2.25rem;
+  --nav-fs: 1.5rem;
+  --h3-fs: 1.12rem;
+  --h2-fs: 3rem;
+  --par-fs: 1.12rem;
+  --h4-fs: 0.875rem;
+  --h5-fs: 1.125rem;
+  --h6-fs:0.875rem;
+  --par2-fs: 1rem;
+  --h3More-fs: 1.5rem;
+  --meet-fs: 1.125rem;
+  --par3-fs: 1rem;
+  --footerH1-fs: 2.25rem;
+}
+
+/* border-box */
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* --- vyber --- */
+::-moz-selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #1683ff;
+  color: #ffffff;
+}
+
+.checkBox {
+  display: none;
+}
+
+body {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+.mobile .mobile-list li a {
+  font-size: var(--nav-fs);
+  line-height: 2.25rem;
+  color: #333333;
+}
+
+header {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 6.25rem;
+}
+header h1 {
+  font-size: var(--h1-fs);
+  line-height: 1.4722222222em;
+}
+header .navigace li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+header .navigace li a {
+  font-size: var(--nav-fs);
+  line-height: 1.5em;
+  color: #333333;
+}
+
+main {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+main .toMiddle {
+  margin-left: 15%;
+}
+main .toMiddle h3 {
+  font-size: var(--h3-fs);
+  color: #2D9CDB;
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+}
+main .toMiddle h2 {
+  font-size: var(--h2-fs);
+  color: #333333;
+  line-height: 1.5em;
+}
+main .toMiddle p {
+  font-size: var(--par-fs);
+  color: #4f4f4f;
+  line-height: 1.5em;
+}
+main .toMiddle h4 {
+  font-size: var(--h4-fs);
+  color: #828282;
+}
+main .toMiddle input {
+  color: #828282;
+  font-size: var(--h5-fs);
+  line-height: 1.5em;
+  border: none;
+  color: #828282;
+  background-color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+main .toMiddle input::placeholder {
+  font-size: var(--h5-fs);
+  line-height: 1.5em;
+  color: #bdbdbd;
+}
+main .toMiddle .submit {
+  background-color: #2D9CDB;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  color: #f2f2f2;
+}
+main .wrap {
+  max-width: 23.125rem;
+}
+main .wrap p {
+  margin: 2rem 0;
+}
+main .wrap .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  background-color: #f2f2f2;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+main .wrap .flex input:first-child {
+  width: 75%;
+}
+main .wrap .flex input:last-child {
+  min-width: 5rem;
+  width: 20%;
+}
+main img {
+  border-radius: 18px;
+  margin: 2rem 0;
+}
+
+main .container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+main .middland {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+main .middland h2 {
+  font-size: var(--h1-fs);
+  line-height: 3.375rem;
+  line-height: 1.5em;
+  color: #333333;
+}
+main .middland .middland-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+main .middland .middland-flex li {
+  border-radius: 24px;
+  padding: 3rem 2rem;
+  transition: box-shadow ease-in-out 0.2s;
+  cursor: default;
+}
+main .middland .middland-flex li:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+main .middland .middland-flex .selected {
+  background-color: #2D9CDB;
+  color: #ffffff;
+}
+main .middland .middland-flex .icon {
+  width: 67px;
+  height: 67px;
+  margin: 0;
+  padding: 0.7rem;
+  border-radius: 16px;
+}
+main .middland .middland-flex .pen {
+  background-color: #2D9CDB;
+}
+main .middland .middland-flex .tag {
+  background-color: #27AE60;
+}
+main .middland .middland-flex .file {
+  background-color: #EB5757;
+}
+main .middland .middland-flex h2 {
+  font-size: var(--nav-fs);
+  line-height: 1.5em;
+  color: #333333;
+  margin: 2rem 0;
+}
+main .middland .middland-flex p {
+  font-size: var(--par3-fs);
+  color: #4f4f4f;
+  margin-bottom: 2rem;
+}
+main .middland .middland-flex a {
+  font-size: var(--par3-fs);
+  line-height: 24px;
+  line-height: 1.5em;
+  color: #828282;
+  background-color: #E0E0E0;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+main .flexWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+main .flexWrap li {
+  margin: 0 auto;
+  flex-basis: 48%;
+}
+main .flexWrap .paddingTop {
+  padding-top: 15%;
+}
+main .flexWrap img {
+  max-width: 34.0625rem;
+}
+main .flexWrap h6 {
+  font-size: var(--h6-fs);
+  line-height: 1.3125rem;
+  line-height: 1.5em;
+  color: #828282;
+}
+main .flexWrap h3 {
+  font-size: var(--h3More-fs);
+  line-height: 1.5em;
+  color: #333333;
+}
+main .align {
+  font-size: var(--h3More-fs);
+  line-height: 1.5em;
+  color: #2D9CDB;
+  align-self: flex-end;
+  text-align: right;
+  margin-top: -30px;
+}
+
+main .lastFlex {
+  margin-top: 12.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+main .lastFlex .content {
+  flex-basis: 40%;
+}
+main .lastFlex .content h3 {
+  color: #EB5757;
+  font-size: var(--meet-fs);
+  line-height: 1.4977777778em;
+}
+main .lastFlex .content h2 {
+  color: #333333;
+  font-size: var(--footerH1-fs);
+  line-height: 1.5em;
+}
+main .lastFlex .content p {
+  color: #4f4f4f;
+  font-size: var(--par3-fs);
+  line-height: 1.5em;
+}
+main .lastFlex .triple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-basis: 58%;
+}
+main .lastFlex .triple img {
+  flex-basis: 45%;
+  width: 20%;
+  margin: 0;
+  max-width: 16.25rem;
+}
+main .lastFlex .triple .double {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  max-width: 16.25rem;
+  gap: 16px;
+}
+main .lastFlex .triple .double img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+main .lastSection {
+  margin-top: 5rem;
+}
+main .lastSection h2 {
+  font-size: var(--h1-fs);
+  color: #333333;
+  line-height: 1.5em;
+  max-width: 58.75rem;
+}
+main .lastSection .gastby {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+main .lastSection .gastby img {
+  max-width: 5.125rem;
+  margin: 0;
+}
+main .lastSection .gastby h5 {
+  font-size: var(--nav-fs);
+  color: #333333;
+  line-height: 1.5em;
+}
+main .lastSection .gastby h6 {
+  font-size: --meet-fs;
+  line-height: 1.4933333333em;
+  color: #828282;
+}
+
+footer {
+  padding-top: 3rem;
+  background-color: #100E1D;
+  padding-bottom: 2rem;
+}
+footer .container {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+footer .footerFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+footer .footerFlex .footerNav {
+  flex-basis: 1;
+}
+footer .footerFlex .footerNav li {
+  margin-bottom: 1rem;
+}
+footer .footerFlex .footerNav a {
+  color: #ffffff;
+}
+footer .footerFlex .footerEdie {
+  flex-basis: 20%;
+}
+footer .footerFlex .footerEdie h2 {
+  color: #f2f2f2;
+  font-size: var(--footerH1-fs);
+  line-height: 0.5833333333em;
+  margin-bottom: 1rem;
+}
+footer .footerFlex .footerEdie li {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+footer .footerFlex .footerEdie li i {
+  font-size: 1.8rem;
+}
+footer .footerFlex .footerEdie a {
+  color: #f2f2f2;
+}
+footer .footerFlex .footerForm {
+  flex-basis: 30%;
+}
+footer .footerFlex .footerForm h3 {
+  color: #f2f2f2;
+  font-size: var(--h6-fs);
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+}
+footer .footerFlex .footerForm .formFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 0.2rem 0.1rem;
+}
+footer .footerFlex .footerForm .formFlex input:first-child {
+  width: 70%;
+}
+footer .footerFlex .footerForm .formFlex input:last-child {
+  width: 20%;
+  min-width: 4rem;
+}
+footer .footerFlex .footerForm .formFlex input {
+  line-height: 1.6875rem;
+  font-size: var(--h5-fs);
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+footer .footerFlex .footerForm .formFlex input[type=submit] {
+  background-color: #2D9CDB;
+  color: #f2f2f2;
+}
+footer .footerFlex .footerForm .formFlex input::placeholder {
+  color: #bdbdbd;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 8rem;
+  color: #f2f2f2;
+  font-size: var(--h6-fs);
+}
+@media only screen and (max-width: 850px) {
+  :root {
+    --h1-fs: 1.5rem;
+    --nav-fs: 1.5rem;
+    --h3-fs: 0.75rem;
+    --h2-fs: 1.5rem;
+    --par-fs: 1rem;
+    --h4-fs: 0.625rem;
+    --h5-fs: 0.875rem;
+    --h6-fs:0.75rem;
+    --par2-fs: 1rem;
+    --h3More-fs: 1.125rem;
+    --meet-fs: 1.125rem;
+    --par3-fs: 1rem;
+    --footerH1-fs: 2.25rem;
+  }
+  header nav {
+    display: none;
+  }
+  .checkBox {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 900;
+    appearance: none;
+    width: 50px;
+    height: 50px;
+    background-image: url(./../img/menu.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .checkBox:checked {
+    background-image: url(./../img/close.svg);
+  }
+  .checkBox:checked ~ .mobile {
+    display: flex;
+  }
+  .checkBox:checked ~ .checkBoxik {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .mobile {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  .mobile .mobile-list {
+    text-align: center;
+    z-index: 100;
+  }
+  .mobile .mobile-list li {
+    margin-bottom: 2rem;
+  }
+  main .lastFlex {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  main .lastFlex .triple {
+    margin-top: 32px;
+  }
+  main .toMiddle {
+    margin-left: 5%;
+  }
+  main .middland {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  main .middland .middland-flex {
+    margin-top: 0rem;
+    flex-direction: column;
+  }
+  main .middland .middland-flex li {
+    width: 80%;
+    margin: 0 auto;
+  }
+  main .lastSection .gastby {
+    margin-bottom: 4rem;
+  }
+  footer .footerFlex {
+    flex-direction: column;
+  }
+  footer .footerFlex .footerNav,
+  footer .footerFlex .footerEdie,
+  footer .footerFlex .footerEdie h2 {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 530px) {
+  main .flexWrap li {
+    flex-basis: 80%;
+  }
+  main .flexWrap .paddingTop {
+    padding-top: 0;
+  }
+  main .lastFlex {
+    margin-top: 5rem;
+  }
+  main .align {
+    margin-top: 10px;
+  }
+  main .middland {
+    margin-top: 3rem;
+  }
+  main .middland .middland-flex li {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
